@@ -1,7 +1,7 @@
 import nbformat, os
 
 rootdir = ""
-subdirs = ["dynamic_programming", "dynamic_programming_squared", "getting_started_julia", "more_julia", "multi_agent_models", "time_series_models", "tools_and_techniques"]
+subdirs = ["continuous_time", "dynamic_programming", "dynamic_programming_squared", "getting_started_julia", "more_julia", "multi_agent_models", "time_series_models", "tools_and_techniques"]
 assetdir = "../lecture-source-jl/source/"
 
 
