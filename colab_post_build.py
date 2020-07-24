@@ -2,11 +2,13 @@ import nbformat, os
 
 rootdir = ""
 subdirs = ["dynamic_programming", "dynamic_programming_squared", "getting_started_julia", "more_julia", "multi_agent_models", "time_series_models", "tools_and_techniques"]
+assetdir = "../lecture-source-jl/source/"
 
-colab_markdown_text = open(os.path.join(rootdir, "_static", "includes", "colab-instructions.md")).read()
+
+colab_markdown_text = open(os.path.join(assetdir, "_static", "includes", "colab-instructions.md")).read()
 colab_markdown_cell = nbformat.v4.new_markdown_cell(colab_markdown_text)
 
-colab_code_text = open(os.path.join(rootdir, "_static", "includes", "colab_code_cell.txt")).read()
+colab_code_text = open(os.path.join(assetdir, "_static", "includes", "colab_code_cell.txt")).read()
 colab_code_cell = nbformat.v4.new_code_cell(colab_code_text)
 
 for dir in subdirs:
